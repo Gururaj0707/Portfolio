@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+header {
+    text-align: center;
+    background-color: #007acc;
+    color: white;
+    padding: 20px 0;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    margin: 10px 0 20px;
+    font-size: 1.2em;
+}
+header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.about-container p {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Projects Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+.project-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007acc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.project-card .btn:hover {
+    background: #005b99;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skill {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 250px;
+}
+.skill i {
+    font-size: 2em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+form .btn {
+    background: #007acc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .btn:hover {
+    background: #005b99;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+/* Contact Section Styling */
+#contact {
+    padding: 50px 20px;
+    background: #f4f4f4; /* Background color */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Container for Contact Items */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Styling each contact item */
+.contact-item {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    color: #333;
+}
+
+.contact-item a {
+    color: #007acc; /* Link color */
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Icon Styling */
+.icon {
+    font-size: 2em; /* Larger icon size */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        font-size: 1.5em;
+    }
+
+    .icon {
+        font-size: 2.5em;
+    }
+}
+/* Styling for the Welcome Section */
+#welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4; /* D/* Styling for the Welcome Section */
+#welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #ff6347, #4682b4, #32cd32, #ff1493);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Styling for the Welcome Message */
+.welcome-message {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+}
+
+/* Styling for the Name */
+.name {
+    font-size: 2em;
+    color: #fff; /* White text */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+ gray background */
+}
+
+/* Styling for the Welcome Message */
+.welcome-message {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: colorChange 5s infinite; /* Apply color change animation */
+}
+
+/* Styling for the Name */
+.name {
+    font-size: 2em;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards; /* Delayed fade-in animation */
+}
+
+/* Keyframes for Color Change Animation */
+@keyframes colorChange {
+    0% {
+        color: #ff6347; /* Tomato */
+    }
+    25% {
+        color: #4682b4; /* SteelBlue */
+    }
+    50% {
+        color: #32cd32; /* LimeGreen */
+    }
+    75% {
+        color: #ff1493; /* DeepPink */
+    }
+    100% {
+        color: #ff6347; /* Tomato */
+    }
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/* Default (Light Mode) */
+body {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Black text by default */
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff !important; /* Force white text */
+}
+
+/* Override all text elements explicitly */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode p,
+.dark-mode span,
+.dark-mode a,
+.dark-mode li,
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode button,
+.dark-mode label {
+    color: #ffffff !important; /* Ensure all text is white */
+}
+
+/* Links in dark mode */
+.dark-mode a {
+    color: #87ceeb !important; /* Light blue for better visibility */
+}
+
+/* Buttons in dark mode */
+.dark-mode .btn {
+    background-color: #ffffff; /* White button background */
+    color: #000000; /* Black text for buttons */
+}
+
+/* Handle form fields */
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* White text inside inputs */
+    border: 1px solid #555555; /* Border for inputs */
+}
+
+/* Labels in forms */
+.dark-mode label {
+    color: #ffffff; /* Ensure labels are visible */
+}
+.dark-mode * {
+    color: #ffffff !important; /* Force all elements to white */
+}
+
